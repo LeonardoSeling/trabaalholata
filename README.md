@@ -13,7 +13,7 @@ Fluxo de dados:
 text
 Aluno abre o site → Frontend pede dados → Backend responde → Tela mostra ranking
 Você entra no admin → Digita senha → Edita latinhas → Backend salva → Ranking atualiza
-🧰 PARTE 0 — Preparação (30 min)
+# 🧰 PARTE 0 — Preparação (30 min)
 0.1 Instalar ferramentas
 Instale o Node.js (versão LTS) em nodejs.org. Isso instala também o npm.
 
@@ -39,7 +39,7 @@ competicao-latinhas/
 └── frontend/
 Abra essa pasta no VS Code (File → Open Folder).
 
-🧠 PARTE 1 — Backend (o cérebro)
+# 🧠 PARTE 1 — Backend (o cérebro)
 1.1 Inicializar o projeto Node
 No terminal do VS Code, entre na pasta backend: cd backend
 
@@ -100,7 +100,7 @@ Abra o navegador e acesse: http://localhost:3000/api/turmas
 
 Se aparecer um JSON com as turmas, o backend está funcionando. Deixe o terminal aberto enquanto testa o frontend.
 
-🎨 PARTE 2 — Frontend (as telas)
+# 🎨 PARTE 2 — Frontend (as telas)
 2.1 Criar a página pública (index.html)
 Essa é a página que os alunos vão ver. Ela precisa ter:
 
@@ -179,7 +179,7 @@ Página admin: http://localhost:5000/admin.html → deve pedir a senha.
 
 Teste: faça login com a senha do .env, clique em +10 numa turma, volte para a página pública e veja se mudou.
 
-☁️ PARTE 3 — Deploy Gratuito
+# ☁️ PARTE 3 — Deploy Gratuito
 3.1 Subir o projeto no GitHub
 No GitHub, clique em New Repository, dê um nome (ex: competicao-latinhas), deixe público, não inicialize com README.
 
@@ -256,7 +256,7 @@ Abra <URL_VERCEL>/admin.html → faça login, mude latinhas, confira na página 
 
 Teste no celular também.
 
-🔄 PARTE 4 — Uso no Dia a Dia
+# 🔄 PARTE 4 — Uso no Dia a Dia
 Durante a competição
 Alunos: acessam a URL da Vercel, só veem o ranking.
 
