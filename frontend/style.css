@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Estilo do Pódio */
+#podio-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 15px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.podio-posicao {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.primeiro {
+  height: 200px;
+  background: rgba(255, 215, 0, 0.15);
+  border: 2px solid #ffd700;
+  order: 2; /* Fica no meio */
+}
+
+.segundo {
+  height: 160px;
+  background: rgba(192, 192, 192, 0.15);
+  border: 2px solid #c0c0c0;
+  order: 1; /* Fica na esquerda */
+}
+
+.terceiro {
+  height: 130px;
+  background: rgba(205, 127, 50, 0.15);
+  border: 2px solid #cd7f32;
+  order: 3; /* Fica na direita */
+}
+
+.medalha {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Estilo da Tabela */
+#tabela-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+#tabela-container h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Botão Admin */
+footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.btn-admin {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.btn-admin:hover {
+  color: #ffffff;
+}
+
+/* Design Responsivo para Celular */
+@media (max-width: 600px) {
+  #podio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .podio-posicao {
+    width: 100%;
+    height: auto !important;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .primeiro { order: 1; }
+  .segundo { order: 2; }
+  .terceiro { order: 3; }
+}

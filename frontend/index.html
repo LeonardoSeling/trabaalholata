@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🥫 Competição de Latinhas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🥫 Competição de Latinhas</h1>
+    <p>Acompanhe o ranking de arrecadação em tempo real!</p>
+  </header>
+
+  <main>
+    <!-- Área do Pódio (Top 3) -->
+    <section id="podio-container">
+      <div class="podio-posicao segundo">
+        <span class="medalha">🥈</span>
+        <h3 id="nome-2">--</h3>
+        <p><span id="latinhas-2">0</span> <small>latinhas</small></p>
+      </div>
+      <div class="podio-posicao primeiro">
+        <span class="medalha">🥇</span>
+        <h3 id="nome-1">--</h3>
+        <p><span id="latinhas-1">0</span> <small>latinhas</small></p>
+      </div>
+      <div class="podio-posicao terceiro">
+        <span class="medalha">🥉</span>
+        <h3 id="nome-3">--</h3>
+        <p><span id="latinhas-3">0</span> <small>latinhas</small></p>
+      </div>
+    </section>
+
+    <!-- Tabela Geral -->
+    <section id="tabela-container">
+      <h2>📊 Classificação Geral</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Posição</th>
+            <th>Turma</th>
+            <th>Quantidade</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-corpo">
+          <!-- As linhas serão inseridas aqui via JavaScript -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <a href="admin.html" class="btn-admin">⚙️ Painel do Administrador</a>
+  </footer>
+
+  <script href="script.js" src="script.js"></script>
+</body>
+</html>
